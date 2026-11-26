@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Homelab Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">HOMELAB BACKUP</p>
+    <h1>Privacy Policy</h1>
+    <p class="lead">Last updated: November 26, 2026</p>
+    <p>Homelab Backup is a private, non-commercial utility operated by an individual to back up their own self-hosted applications to their own Google Drive account.</p>
+    <h2>Google account access</h2>
+    <p>The utility uses Google's OAuth 2.0 authorization to access Google Drive through rclone. Its current Google Drive permission is the <code>drive</code> scope. This scope can grant broad access to Drive files. The workflow uses this access to upload and list backup archives, delete expired backups, and download backups for recovery.</p>
+    <h2>Data handled</h2>
+    <p>Files from the operator's self-hosted applications are packaged into backup archives and encrypted locally with rclone crypt before being uploaded. Google processes the encrypted uploaded files as part of providing Google Drive storage. OAuth tokens are held in the operator's local rclone configuration. No OAuth tokens or encryption passwords are published on this site.</p>
+    <h2>Sharing and retention</h2>
+    <p>The operator does not intentionally sell or share backup content with advertisers or unrelated third parties. The current backup workflow automatically deletes cloud backup archives older than seven days after a successful run. Google's own storage, account, and deletion practices remain subject to Google's policies.</p>
+    <h2>Website</h2>
+    <p>This informational website is hosted on GitHub Pages. It does not itself request Google authorization, upload files, or collect information through forms or analytics added by the operator. GitHub may process standard site access information under its own privacy policy.</p>
+    <h2>Contact</h2>
+    <p>For privacy inquiries, use the support email address displayed on the app's Google OAuth consent screen.</p>
+    <p><a href="index.html">Back to homepage</a></p>
+  </main>
+  <footer>Homelab Backup · Personal use only</footer>
+</body>
+</html>
